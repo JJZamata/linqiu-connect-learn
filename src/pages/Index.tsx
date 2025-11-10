@@ -4,6 +4,7 @@ import TabPanel from "@/components/TabPanel";
 import FeaturesSection from "@/components/FeaturesSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import TeamSection from "@/components/TeamSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <FeaturesSection />
       <RoadmapSection />
       <TeamSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </div>
