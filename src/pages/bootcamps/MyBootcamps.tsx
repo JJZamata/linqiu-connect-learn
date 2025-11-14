@@ -8,33 +8,33 @@ const MyBootcamps = () => {
   const bootcamps = [
     {
       id: 1,
-      title: "React Fundamentals",
-      date: "Jan 2025",
-      status: "Active",
+      title: "Fundamentos de React",
+      date: "Ene 2025",
+      status: "Activo",
       students: 45,
       rating: 4.8,
     },
     {
       id: 2,
-      title: "TypeScript Basics",
-      date: "Dec 2024",
-      status: "Completed",
+      title: "Conceptos Básicos de TypeScript",
+      date: "Dic 2024",
+      status: "Completado",
       students: 62,
       rating: 4.9,
     },
     {
       id: 3,
-      title: "Node.js Backend",
+      title: "Backend con Node.js",
       date: "Feb 2025",
-      status: "Draft",
+      status: "Borrador",
       students: 0,
       rating: 0,
     },
     {
       id: 4,
-      title: "Full Stack Development",
+      title: "Desarrollo Full Stack",
       date: "Mar 2025",
-      status: "Active",
+      status: "Activo",
       students: 38,
       rating: 4.7,
     },
@@ -42,11 +42,11 @@ const MyBootcamps = () => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "Active":
+      case "Activo":
         return "bg-green-500";
-      case "Completed":
+      case "Completado":
         return "bg-blue-500";
-      case "Draft":
+      case "Borrador":
         return "bg-gray-500";
       default:
         return "bg-gray-500";
@@ -60,8 +60,8 @@ const MyBootcamps = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">My Bootcamps</h1>
-        <p className="text-muted-foreground">Manage and monitor your bootcamp modules.</p>
+        <h1 className="text-3xl font-bold mb-2">Mis Bootcamps</h1>
+        <p className="text-muted-foreground">Gestiona y monitorea tus módulos de bootcamp.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -88,11 +88,11 @@ const MyBootcamps = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Users className="w-4 h-4" />
-                  <span>{bootcamp.students} students enrolled</span>
+                  <span>{bootcamp.students} estudiantes inscritos</span>
                 </div>
                 {bootcamp.rating > 0 && (
                   <div className="flex items-center gap-2 text-sm">
-                    <span className="font-medium">Rating:</span>
+                    <span className="font-medium">Calificación:</span>
                     <span className="text-yellow-500">★ {bootcamp.rating}</span>
                   </div>
                 )}
@@ -100,11 +100,11 @@ const MyBootcamps = () => {
               <CardFooter className="flex gap-2">
                 <Button variant="outline" size="sm" className="flex-1">
                   <Eye className="w-4 h-4 mr-2" />
-                  View
+                  Ver
                 </Button>
                 <Button variant="outline" size="sm" className="flex-1">
                   <Edit className="w-4 h-4 mr-2" />
-                  Edit
+                  Editar
                 </Button>
                 <Button variant="outline" size="sm">
                   <Trash2 className="w-4 h-4" />

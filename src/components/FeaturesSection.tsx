@@ -5,23 +5,23 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Learn at Your Own Pace",
-      description: "Flexible learning paths that adapt to your schedule and learning style.",
+      title: "Aprende a Tu Ritmo",
+      description: "Rutas de aprendizaje flexibles que se adaptan a tu horario y estilo de aprendizaje.",
     },
     {
       icon: Building2,
-      title: "Access Real Workshops",
-      description: "Connect with verified universities and professional training facilities.",
+      title: "Accede a Talleres Reales",
+      description: "Conecta con universidades verificadas e instalaciones de entrenamiento profesional.",
     },
     {
       icon: Map,
-      title: "Follow Your Roadmap",
-      description: "Personalized career paths designed to help you reach your goals faster.",
+      title: "Sigue tu Roadmap",
+      description: "Carreras profesionales personalizadas diseñadas para ayudarte a alcanzar tus objetivos más rápido.",
     },
     {
       icon: TrendingUp,
-      title: "Boost Your Career",
-      description: "Connect with top bootcamps and educational institutions to accelerate growth.",
+      title: "Impulsa tu Carrera",
+      description: "Conecta con los mejores bootcamps e instituciones educativas para acelerar tu crecimiento.",
     },
   ];
 
@@ -30,10 +30,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Why Choose LinQiu?
+            ¿Por Qué Elegir LinQiu?
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to succeed in your learning journey
+            Todo lo que necesitas para tener éxito en tu viaje de aprendizaje
           </p>
         </div>
 

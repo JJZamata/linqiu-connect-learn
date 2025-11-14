@@ -2,10 +2,10 @@ import { GraduationCap, Laptop, Building, Trophy } from "lucide-react";
 
 const RoadmapSection = () => {
   const steps = [
-    { icon: GraduationCap, label: "Student", color: "from-primary to-primary-light" },
+    { icon: GraduationCap, label: "Estudiante", color: "from-primary to-primary-light" },
     { icon: Laptop, label: "Bootcamp", color: "from-primary-light to-accent" },
-    { icon: Building, label: "Workshop", color: "from-accent to-primary" },
-    { icon: Trophy, label: "Professional Growth", color: "from-primary to-primary-dark" },
+    { icon: Building, label: "Taller", color: "from-accent to-primary" },
+    { icon: Trophy, label: "Crecimiento Profesional", color: "from-primary to-primary-dark" },
   ];
 
   return (
@@ -13,10 +13,10 @@ const RoadmapSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Your Learning Journey
+            Tu Viaje de Aprendizaje
           </h2>
           <p className="text-xl text-muted-foreground">
-            Follow the path from student to professional
+            Sigue el camino de estudiante a profesional
           </p>
         </div>
 

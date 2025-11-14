@@ -14,8 +14,8 @@ const WorkshopsSettings = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Settings</h1>
-        <p className="text-muted-foreground">Manage your institution profile and preferences.</p>
+        <h1 className="text-3xl font-bold mb-2">Configuración</h1>
+        <p className="text-muted-foreground">Gestiona el perfil y preferencias de tu institución.</p>
       </motion.div>
 
       <motion.div
@@ -26,7 +26,7 @@ const WorkshopsSettings = () => {
       >
         <Card>
           <CardHeader>
-            <CardTitle>Institution Information</CardTitle>
+            <CardTitle>Información de la Institución</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
@@ -35,87 +35,87 @@ const WorkshopsSettings = () => {
                 <div className="w-24 h-24 rounded-lg border-2 border-dashed border-border flex items-center justify-center">
                   <Upload className="w-8 h-8 text-muted-foreground" />
                 </div>
-                <Button variant="outline">Upload Logo</Button>
+                <Button variant="outline">Subir Logo</Button>
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="institution-name">Institution Name</Label>
-              <Input id="institution-name" placeholder="Your institution name" />
+              <Label htmlFor="institution-name">Nombre de la Institución</Label>
+              <Input id="institution-name" placeholder="Nombre de tu institución" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="description">Description</Label>
+              <Label htmlFor="description">Descripción</Label>
               <Textarea
                 id="description"
-                placeholder="Brief description of your institution..."
+                placeholder="Breve descripción de tu institución..."
                 rows={3}
               />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="contact-email">Contact Email</Label>
-                <Input id="contact-email" type="email" placeholder="contact@example.com" />
+                <Label htmlFor="contact-email">Correo de Contacto</Label>
+                <Input id="contact-email" type="email" placeholder="contacto@ejemplo.com" />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
+                <Label htmlFor="phone">Número de Teléfono</Label>
                 <Input id="phone" type="tel" placeholder="+52 123 456 7890" />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="address">Address</Label>
-              <Input id="address" placeholder="Full address" />
+              <Label htmlFor="address">Dirección</Label>
+              <Input id="address" placeholder="Dirección completa" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="website">Website</Label>
-              <Input id="website" type="url" placeholder="https://yourinstitution.com" />
+              <Label htmlFor="website">Sitio Web</Label>
+              <Input id="website" type="url" placeholder="https://tuinstitucion.com" />
             </div>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Billing Information</CardTitle>
+            <CardTitle>Información de Facturación</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="billing-email">Billing Email</Label>
-              <Input id="billing-email" type="email" placeholder="billing@example.com" />
+              <Label htmlFor="billing-email">Correo de Facturación</Label>
+              <Input id="billing-email" type="email" placeholder="facturacion@ejemplo.com" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="tax-id">Tax ID / RFC</Label>
-              <Input id="tax-id" placeholder="Your tax identification number" />
+              <Label htmlFor="tax-id">ID Fiscal / RFC</Label>
+              <Input id="tax-id" placeholder="Tu número de identificación fiscal" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="bank-account">Bank Account</Label>
-              <Input id="bank-account" placeholder="Account number for payments" />
+              <Label htmlFor="bank-account">Cuenta Bancaria</Label>
+              <Input id="bank-account" placeholder="Número de cuenta para pagos" />
             </div>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Notification Preferences</CardTitle>
+            <CardTitle>Preferencias de Notificación</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <Label>Email Notifications</Label>
-                <p className="text-sm text-muted-foreground">Receive booking updates via email</p>
+                <Label>Notificaciones por Correo</Label>
+                <p className="text-sm text-muted-foreground">Recibir actualizaciones de reservas por correo</p>
               </div>
               <input type="checkbox" className="toggle" defaultChecked />
             </div>
 
             <div className="flex items-center justify-between">
               <div>
-                <Label>SMS Notifications</Label>
-                <p className="text-sm text-muted-foreground">Receive urgent alerts via SMS</p>
+                <Label>Notificaciones SMS</Label>
+                <p className="text-sm text-muted-foreground">Recibir alertas urgentes por SMS</p>
               </div>
               <input type="checkbox" className="toggle" />
             </div>
@@ -123,8 +123,8 @@ const WorkshopsSettings = () => {
         </Card>
 
         <div className="flex justify-end gap-4">
-          <Button variant="outline">Cancel</Button>
-          <Button>Save Changes</Button>
+          <Button variant="outline">Cancelar</Button>
+          <Button>Guardar Cambios</Button>
         </div>
       </motion.div>
     </div>

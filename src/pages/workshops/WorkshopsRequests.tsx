@@ -8,49 +8,49 @@ const WorkshopsRequests = () => {
   const requests = [
     {
       id: 1,
-      requester: "TechU Bootcamp",
-      workshop: "Electronics Lab A",
-      date: "Jan 15, 2025",
+      requester: "Bootcamp TechU",
+      workshop: "Laboratorio de Electrónica A",
+      date: "Ene 15, 2025",
       time: "10:00 AM - 2:00 PM",
       participants: 15,
-      status: "Pending",
+      status: "Pendiente",
     },
     {
       id: 2,
-      requester: "Code Academy",
-      workshop: "Computer Lab",
-      date: "Jan 18, 2025",
+      requester: "Academia Code",
+      workshop: "Laboratorio de Computación",
+      date: "Ene 18, 2025",
       time: "9:00 AM - 12:00 PM",
       participants: 25,
-      status: "Pending",
+      status: "Pendiente",
     },
     {
       id: 3,
-      requester: "Robotics Club",
-      workshop: "Robotics Workshop",
-      date: "Jan 20, 2025",
+      requester: "Club de Robótica",
+      workshop: "Taller de Robótica",
+      date: "Ene 20, 2025",
       time: "2:00 PM - 6:00 PM",
       participants: 12,
-      status: "Approved",
+      status: "Aprobado",
     },
     {
       id: 4,
-      requester: "Maker Group",
-      workshop: "3D Printing Lab",
-      date: "Jan 22, 2025",
+      requester: "Grupo Maker",
+      workshop: "Laboratorio de Impresión 3D",
+      date: "Ene 22, 2025",
       time: "1:00 PM - 4:00 PM",
       participants: 8,
-      status: "Rejected",
+      status: "Rechazado",
     },
   ];
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "Approved":
+      case "Aprobado":
         return "bg-green-500";
-      case "Rejected":
+      case "Rechazado":
         return "bg-red-500";
-      case "Pending":
+      case "Pendiente":
         return "bg-yellow-500";
       default:
         return "bg-gray-500";
@@ -64,13 +64,13 @@ const WorkshopsRequests = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Booking Requests</h1>
-        <p className="text-muted-foreground">Review and manage reservation requests.</p>
+        <h1 className="text-3xl font-bold mb-2">Solicitudes de Reserva</h1>
+        <p className="text-muted-foreground">Revisa y gestiona las solicitudes de reserva.</p>
       </motion.div>
 
       <Card>
         <CardHeader>
-          <CardTitle>All Requests</CardTitle>
+          <CardTitle>Todas las Solicitudes</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -90,26 +90,26 @@ const WorkshopsRequests = () => {
                     </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium">Workshop:</span> {request.workshop}
+                    <span className="font-medium">Taller:</span> {request.workshop}
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                     <span>
                       <Clock className="w-4 h-4 inline mr-1" />
                       {request.date} • {request.time}
                     </span>
-                    <span>{request.participants} participants</span>
+                    <span>{request.participants} participantes</span>
                   </div>
                 </div>
 
-                {request.status === "Pending" && (
+                {request.status === "Pendiente" && (
                   <div className="flex gap-2">
                     <Button size="sm" className="bg-green-500 hover:bg-green-600">
                       <Check className="w-4 h-4 mr-1" />
-                      Accept
+                      Aceptar
                     </Button>
                     <Button size="sm" variant="outline" className="border-red-500 text-red-500 hover:bg-red-50">
                       <X className="w-4 h-4 mr-1" />
-                      Reject
+                      Rechazar
                     </Button>
                   </div>
                 )}

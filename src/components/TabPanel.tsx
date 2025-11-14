@@ -1,8 +1,15 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import studentsImage from "@/assets/students-learning.jpg";
-import bootcampImage from "@/assets/bootcamp.jpg";
-import workshopImage from "@/assets/workshop.jpg";
+import studentLearningPathImage from "@/assets/student-learning-path.jpg";
+import generalUniversitiesImage from "@/assets/general-universities.jpg";
+import studentVerifiedBootcampsImage from "@/assets/student-verified-bootcamps.jpg";
+import studentWorkshopsImage from "@/assets/student-workshops.jpg";
+import bootcampMatchingImage from "@/assets/bootcamp-matching.jpg";
+import universityRentalImage from "@/assets/university-rental.jpg";
+import bootcampManagementImage from "@/assets/bootcamp-management.jpg";
+import bootcampMatching from "@/assets/bootcamp-matching.jpg";
+import universityPartnershipImage from "@/assets/university-partnership.jpg";
+import universityEngagementImage from "@/assets/university-engagement.jpg";
 
 interface ContentRow {
   title: string;
@@ -17,81 +24,81 @@ const TabPanel = () => {
   const tabContent: Record<string, ContentRow[]> = {
     general: [
       {
-        title: "For Students",
-        description: "Access a personalized learning roadmap tailored to your goals. Connect with top bootcamps and universities to accelerate your professional journey.",
-        image: studentsImage,
+        title: "Para Estudiantes",
+        description: "Accede a un roadmap de aprendizaje personalizado adaptado a tus objetivos. Conecta con los mejores bootcamps y universidades para acelerar tu trayectoria profesional.",
+        image: studentLearningPathImage,
         imagePosition: "left",
       },
       {
-        title: "For Bootcamps",
-        description: "Expand your reach and connect with motivated students. Showcase your programs and find the perfect facilities for your training sessions.",
-        image: bootcampImage,
+        title: "Para Bootcamps",
+        description: "Expande tu alcance y conecta con estudiantes motivados. Presenta tus programas y encuentra las instalaciones perfectas para tus sesiones de entrenamiento.",
+        image: bootcampMatching,
         imagePosition: "right",
       },
       {
-        title: "For Workshops & Universities",
-        description: "Rent your facilities to verified bootcamps and educational programs. Maximize your space utilization while supporting education.",
-        image: workshopImage,
+        title: "Para Talleres y Universidades",
+        description: "Alquila tus instalaciones a bootcamps verificados y programas educativos. Maximiza el uso de tu espacio mientras apoyas la educación.",
+        image: generalUniversitiesImage,
         imagePosition: "left",
       },
     ],
     students: [
       {
-        title: "Personalized Learning Path",
-        description: "Get a customized roadmap based on your skills, interests, and career goals. Track your progress and achievements along the way.",
-        image: studentsImage,
+        title: "Ruta de Aprendizaje Personalizada",
+        description: "Obtén un roadmap personalizado basado en tus habilidades, intereses y objetivos profesionales. Seguimiento de tu progreso y logros en el camino.",
+        image: studentLearningPathImage,
         imagePosition: "left",
       },
       {
-        title: "Verified Bootcamps",
-        description: "Access a curated list of verified bootcamps and courses. Read reviews, compare programs, and make informed decisions about your education.",
-        image: bootcampImage,
+        title: "Bootcamps Verificados",
+        description: "Accede a una lista curada de bootcamps y cursos verificados. Lee reseñas, compara programas y toma decisiones informadas sobre tu educación.",
+        image: studentVerifiedBootcampsImage,
         imagePosition: "right",
       },
       {
-        title: "Real-World Workshops",
-        description: "Participate in hands-on workshops at prestigious universities. Gain practical experience and network with industry professionals.",
-        image: workshopImage,
+        title: "Talleres Prácticos",
+        description: "Participa en talleres hands-on en universidades prestigiosas. Obtén experiencia práctica y conecta con profesionales de la industria.",
+        image: studentWorkshopsImage,
         imagePosition: "left",
       },
     ],
     bootcamps: [
       {
-        title: "Student Matching",
-        description: "Connect with students who match your program criteria. Build your cohorts with motivated learners ready to transform their careers.",
-        image: studentsImage,
+        title: "Conexión con Estudiantes",
+        description: "Conecta con estudiantes que coinciden con los criterios de tu programa. Construye tus cohortes con aprendices motivados listos para transformar sus carreras.",
+        image: bootcampMatchingImage,
         imagePosition: "left",
       },
       {
-        title: "Facility Booking",
-        description: "Find and book professional training spaces easily. Access universities and workshop facilities for your programs.",
-        image: workshopImage,
+        title: "Reserva de Instalaciones",
+        description: "Encuentra y reserva espacios de entrenamiento profesionales fácilmente. Accede a universidades e instalaciones de talleres para tus programas.",
+        image: universityRentalImage,
         imagePosition: "right",
       },
       {
-        title: "Program Management",
-        description: "Manage your courses, track student progress, and streamline your operations all in one platform.",
-        image: bootcampImage,
+        title: "Gestión de Programas",
+        description: "Gestiona tus cursos, sigue el progreso de los estudiantes y agiliza tus operaciones, todo en una plataforma.",
+        image: bootcampManagementImage,
         imagePosition: "left",
       },
     ],
     universities: [
       {
-        title: "Facility Rental",
-        description: "List your available spaces and facilities. Generate additional revenue by renting to verified educational programs.",
-        image: workshopImage,
+        title: "Alquiler de Instalaciones",
+        description: "Lista tus espacios e instalaciones disponibles. Genera ingresos adicionales alquilando a programas educativos verificados.",
+        image: universityRentalImage,
         imagePosition: "left",
       },
       {
-        title: "Partnership Opportunities",
-        description: "Build partnerships with leading bootcamps and educational providers. Enhance your institution's educational ecosystem.",
-        image: bootcampImage,
+        title: "Oportunidades de Colaboración",
+        description: "Construye alianzas con bootcamps líderes y proveedores educativos. Mejora el ecosistema educativo de tu institución.",
+        image: universityPartnershipImage,
         imagePosition: "right",
       },
       {
-        title: "Student Engagement",
-        description: "Attract motivated students to your programs. Showcase your facilities and offerings to a wider audience.",
-        image: studentsImage,
+        title: "Participación Estudiantil",
+        description: "Atrae estudiantes motivados a tus programas. Presenta tus instalaciones y ofertas a una audiencia más amplia.",
+        image: universityEngagementImage,
         imagePosition: "left",
       },
     ],
@@ -102,19 +109,19 @@ const TabPanel = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            How LinQiu Works
+            Cómo Funciona LinQiu
           </h2>
           <p className="text-xl text-muted-foreground">
-            Discover how we connect the education ecosystem
+            Descubre cómo conectamos el ecosistema educativo
           </p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-12 bg-background">
             <TabsTrigger value="general">General</TabsTrigger>
-            <TabsTrigger value="students">Students</TabsTrigger>
+            <TabsTrigger value="students">Estudiantes</TabsTrigger>
             <TabsTrigger value="bootcamps">Bootcamps</TabsTrigger>
-            <TabsTrigger value="universities">Universities</TabsTrigger>
+            <TabsTrigger value="universities">Universidades</TabsTrigger>
           </TabsList>
 
           {Object.entries(tabContent).map(([key, rows]) => (

@@ -4,10 +4,10 @@ import { Wrench, Calendar, DollarSign, Star } from "lucide-react";
 
 const WorkshopsOverview = () => {
   const stats = [
-    { label: "Active Workshops", value: "8", icon: Wrench, color: "text-primary" },
-    { label: "Booked Sessions", value: "24", icon: Calendar, color: "text-blue-500" },
-    { label: "Earnings (MTD)", value: "$3,420", icon: DollarSign, color: "text-green-500" },
-    { label: "Avg. Rating", value: "4.9", icon: Star, color: "text-yellow-500" },
+    { label: "Talleres Activos", value: "8", icon: Wrench, color: "text-primary" },
+    { label: "Sesiones Reservadas", value: "24", icon: Calendar, color: "text-blue-500" },
+    { label: "Ganancias (MTD)", value: "S/.3,420", icon: DollarSign, color: "text-green-500" },
+    { label: "Calificación Promedio", value: "4.9", icon: Star, color: "text-yellow-500" },
   ];
 
   return (
@@ -17,8 +17,8 @@ const WorkshopsOverview = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Overview</h1>
-        <p className="text-muted-foreground">Welcome back! Here's your workshop summary.</p>
+        <h1 className="text-3xl font-bold mb-2">Resumen</h1>
+        <p className="text-muted-foreground">¡Bienvenido de nuevo! Aquí está el resumen de tus talleres.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -51,14 +51,14 @@ const WorkshopsOverview = () => {
       >
         <Card>
           <CardHeader>
-            <CardTitle>Upcoming Bookings</CardTitle>
+            <CardTitle>Próximas Reservas</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               {[
-                { workshop: "Electronics Lab A", date: "Tomorrow, 10:00 AM", group: "TechU Students" },
-                { workshop: "Robotics Workshop", date: "Jan 15, 2:00 PM", group: "Bootcamp XYZ" },
-                { workshop: "3D Printing Lab", date: "Jan 18, 9:00 AM", group: "University Group" },
+                { workshop: "Laboratorio de Electrónica A", date: "Mañana, 10:00 AM", group: "Estudiantes de TechU" },
+                { workshop: "Taller de Robótica", date: "Ene 15, 2:00 PM", group: "Bootcamp XYZ" },
+                { workshop: "Laboratorio de Impresión 3D", date: "Ene 18, 9:00 AM", group: "Grupo Universitario" },
               ].map((booking, index) => (
                 <div key={index} className="flex justify-between items-center border-b pb-3 last:border-0">
                   <div>

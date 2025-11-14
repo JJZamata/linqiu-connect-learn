@@ -17,8 +17,8 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Welcome to the waitlist!",
-      description: "We'll contact you soon with early access details.",
+      title: "¡Bienvenido a la lista de espera!",
+      description: "Te contactaremos pronto con los detalles de acceso anticipado.",
     });
     setFormData({ name: "", email: "", profileType: "" });
   };
@@ -31,20 +31,20 @@ const ContactSection = () => {
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <h2 className="text-4xl font-bold text-foreground mb-4">
-                  Join the Waitlist
+                  Únete a la Lista de Espera
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Be among the first to experience LinQiu
+                  Sé de los primeros en experimentar LinQiu
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Full Name</Label>
+                  <Label htmlFor="name">Nombre Completo</Label>
                   <Input
                     id="name"
                     type="text"
-                    placeholder="Enter your name"
+                    placeholder="Ingresa tu nombre"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
@@ -53,11 +53,11 @@ const ContactSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
+                  <Label htmlFor="email">Correo Electrónico</Label>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="your.email@example.com"
+                    placeholder="tu.correo@ejemplo.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
@@ -66,19 +66,19 @@ const ContactSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="profileType">I am a...</Label>
+                  <Label htmlFor="profileType">Soy un/a...</Label>
                   <Select
                     value={formData.profileType}
                     onValueChange={(value) => setFormData({ ...formData, profileType: value })}
                     required
                   >
                     <SelectTrigger className="border-border">
-                      <SelectValue placeholder="Select your profile" />
+                      <SelectValue placeholder="Selecciona tu perfil" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="student">Student</SelectItem>
+                      <SelectItem value="student">Estudiante</SelectItem>
                       <SelectItem value="bootcamp">Bootcamp</SelectItem>
-                      <SelectItem value="university">University/Workshop</SelectItem>
+                      <SelectItem value="university">Universidad/Taller</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -88,7 +88,7 @@ const ContactSection = () => {
                   size="lg"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
-                  Get Early Access
+                  Acceso Anticipado
                 </Button>
               </form>
             </CardContent>

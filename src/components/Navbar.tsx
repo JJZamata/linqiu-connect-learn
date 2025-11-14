@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import logoLinqiu from "@/assets/LogoLinqiu.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,11 +10,10 @@ const Navbar = () => {
   const isPortal = location.pathname.startsWith('/portal');
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Features", href: "/#features" },
-    { name: "Team", href: "/#team" },
-    { name: "Pricing", href: "/#pricing" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Inicio", href: "/" },
+    { name: "Características", href: "/#features" },
+    { name: "Equipo", href: "/#team" },
+    { name: "Contacto", href: "/#contact" },
     { name: "Portal", href: "/portal" },
   ];
 
@@ -22,10 +22,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold">
-            <span className="text-foreground">lin</span>
-            <span className="text-primary">Q</span>
-            <span className="text-foreground">iu</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src={logoLinqiu}
+              alt="LinQiu"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,7 +51,7 @@ const Navbar = () => {
                 </Link>
               )
             ))}
-            {!isPortal && <Button className="bg-primary hover:bg-primary/90">Get Started</Button>}
+            {!isPortal && <Button className="bg-primary hover:bg-primary/90">Comenzar</Button>}
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,7 +90,7 @@ const Navbar = () => {
               ))}
               {!isPortal && (
                 <Button className="bg-primary hover:bg-primary/90 w-full">
-                  Get Started
+                  Comenzar
                 </Button>
               )}
             </div>

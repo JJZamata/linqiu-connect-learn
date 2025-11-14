@@ -1,12 +1,13 @@
 import { Linkedin, Instagram, Youtube } from "lucide-react";
+import logoLinqiu from "@/assets/LogoLinqiu.png";
 
 const Footer = () => {
   const footerLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Team", href: "#team" },
-    { name: "Terms", href: "#terms" },
-    { name: "Privacy Policy", href: "#privacy" },
-    { name: "Contact", href: "#contact" },
+    { name: "Inicio", href: "#home" },
+    { name: "Equipo", href: "#team" },
+    { name: "Términos", href: "#terms" },
+    { name: "Política de Privacidad", href: "#privacy" },
+    { name: "Contacto", href: "#contact" },
   ];
 
   const socialLinks = [
@@ -20,10 +21,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
-          <div className="text-2xl font-bold">
-            <span className="text-background">lin</span>
-            <span className="text-primary">Q</span>
-            <span className="text-background">iu</span>
+          <div className="flex items-center justify-center">
+            <img
+              src={logoLinqiu}
+              alt="LinQiu"
+              className="h-10 w-auto rounded-full border-white/20"
+            />
           </div>
 
           {/* Links */}
@@ -58,7 +61,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-background/70 text-sm">
-            <p>A Novalink initiative © 2025 — All rights reserved.</p>
+            <p>Una iniciativa de Novalink © 2025 — Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

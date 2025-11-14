@@ -9,14 +9,14 @@ const PortalSelection = () => {
   const portals = [
     {
       title: "Bootcamps",
-      description: "Upload, manage, and monitor your online bootcamps.",
+      description: "Sube, administra, y monitorea tus bootcamps.",
       icon: GraduationCap,
       path: "/portal/bootcamps",
       gradient: "from-primary/20 to-primary/5",
     },
     {
-      title: "Workshops / Labs",
-      description: "Register and offer your technical spaces for collaboration.",
+      title: "Tallers / Laboratorios",
+      description: "Registra y ofrece tus espacios técnicos para colaboración.",
       icon: Wrench,
       path: "/portal/workshops",
       gradient: "from-primary/20 to-primary/5",

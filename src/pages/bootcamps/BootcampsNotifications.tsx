@@ -8,33 +8,33 @@ const BootcampsNotifications = () => {
     {
       id: 1,
       type: "success",
-      title: "Module Approved",
-      message: "Your 'React Fundamentals' module has been approved and is now live.",
-      time: "2 hours ago",
+      title: "Módulo Aprobado",
+      message: "Tu módulo 'Fundamentos de React' ha sido aprobado y ahora está en vivo.",
+      time: "hace 2 horas",
       icon: CheckCircle,
     },
     {
       id: 2,
       type: "info",
-      title: "New Enrollment",
-      message: "5 new students enrolled in 'TypeScript Basics'.",
-      time: "5 hours ago",
+      title: "Nueva Inscripción",
+      message: "5 nuevos estudiantes se inscribieron en 'Conceptos Básicos de TypeScript'.",
+      time: "hace 5 horas",
       icon: Info,
     },
     {
       id: 3,
       type: "warning",
-      title: "Review Required",
-      message: "Your 'Node.js Backend' module needs some updates before approval.",
-      time: "1 day ago",
+      title: "Revisión Requerida",
+      message: "Tu módulo 'Backend con Node.js' necesita algunas actualizaciones antes de la aprobación.",
+      time: "hace 1 día",
       icon: AlertCircle,
     },
     {
       id: 4,
       type: "info",
-      title: "Payment Received",
-      message: "You received $450 from December enrollments.",
-      time: "2 days ago",
+      title: "Pago Recibido",
+      message: "Recibiste $450 de las inscripciones de diciembre.",
+      time: "hace 2 días",
       icon: CheckCircle,
     },
   ];
@@ -74,9 +74,9 @@ const BootcampsNotifications = () => {
       >
         <div className="flex items-center gap-3 mb-2">
           <Bell className="w-8 h-8 text-primary" />
-          <h1 className="text-3xl font-bold">Notifications</h1>
+          <h1 className="text-3xl font-bold">Notificaciones</h1>
         </div>
-        <p className="text-muted-foreground">Stay updated with your bootcamp activities.</p>
+        <p className="text-muted-foreground">Mantente actualizado con las actividades de tu bootcamp.</p>
       </motion.div>
 
       <div className="space-y-4">

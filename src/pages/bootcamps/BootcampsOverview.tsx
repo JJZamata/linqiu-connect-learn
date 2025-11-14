@@ -4,10 +4,10 @@ import { BookOpen, Users, Star, TrendingUp } from "lucide-react";
 
 const BootcampsOverview = () => {
   const stats = [
-    { label: "Active Modules", value: "12", icon: BookOpen, color: "text-primary" },
-    { label: "Enrolled Students", value: "342", icon: Users, color: "text-blue-500" },
-    { label: "Avg. Rating", value: "4.8", icon: Star, color: "text-yellow-500" },
-    { label: "Growth", value: "+23%", icon: TrendingUp, color: "text-green-500" },
+    { label: "Módulos Activos", value: "12", icon: BookOpen, color: "text-primary" },
+    { label: "Estudiantes Inscritos", value: "342", icon: Users, color: "text-blue-500" },
+    { label: "Calificación Promedio", value: "4.8", icon: Star, color: "text-yellow-500" },
+    { label: "Crecimiento", value: "+23%", icon: TrendingUp, color: "text-green-500" },
   ];
 
   return (
@@ -17,8 +17,8 @@ const BootcampsOverview = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Overview</h1>
-        <p className="text-muted-foreground">Welcome back! Here's your bootcamp summary.</p>
+        <h1 className="text-3xl font-bold mb-2">Resumen</h1>
+        <p className="text-muted-foreground">¡Bienvenido de nuevo! Aquí está el resumen de tu bootcamp.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -51,14 +51,14 @@ const BootcampsOverview = () => {
       >
         <Card>
           <CardHeader>
-            <CardTitle>Recent Activity</CardTitle>
+            <CardTitle>Actividad Reciente</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               {[
-                { action: "New enrollment", module: "React Fundamentals", time: "2 hours ago" },
-                { action: "Module completed", module: "TypeScript Basics", time: "5 hours ago" },
-                { action: "Review submitted", module: "Node.js Backend", time: "1 day ago" },
+                { action: "Nueva inscripción", module: "Fundamentos de React", time: "hace 2 horas" },
+                { action: "Módulo completado", module: "Conceptos Básicos de TypeScript", time: "hace 5 horas" },
+                { action: "Reseña enviada", module: "Backend con Node.js", time: "hace 1 día" },
               ].map((activity, index) => (
                 <div key={index} className="flex justify-between items-center border-b pb-3 last:border-0">
                   <div>

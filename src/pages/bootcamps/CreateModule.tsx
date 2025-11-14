@@ -18,15 +18,15 @@ const CreateModule = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsProcessing(true);
-    
+
     setTimeout(() => {
       setIsProcessing(false);
       setIsCompleted(true);
       toast({
-        title: "Module Created!",
-        description: "Your bootcamp module is ready for review.",
+        title: "¡Módulo Creado!",
+        description: "Tu módulo de bootcamp está listo para revisión.",
       });
-      
+
       setTimeout(() => {
         setIsCompleted(false);
       }, 3000);
@@ -40,8 +40,8 @@ const CreateModule = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Create Module</h1>
-        <p className="text-muted-foreground">Upload and configure your new bootcamp module.</p>
+        <h1 className="text-3xl font-bold mb-2">Crear Módulo</h1>
+        <p className="text-muted-foreground">Sube y configura tu nuevo módulo de bootcamp.</p>
       </motion.div>
 
       <motion.div
@@ -51,48 +51,48 @@ const CreateModule = () => {
       >
         <Card>
           <CardHeader>
-            <CardTitle>Module Information</CardTitle>
+            <CardTitle>Información del Módulo</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="title">Title</Label>
-                <Input id="title" placeholder="e.g., React Fundamentals" required />
+                <Label htmlFor="title">Título</Label>
+                <Input id="title" placeholder="ej., Fundamentos de React" required />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="description">Description</Label>
+                <Label htmlFor="description">Descripción</Label>
                 <Textarea
                   id="description"
-                  placeholder="Describe what students will learn..."
+                  placeholder="Describe qué aprenderán los estudiantes..."
                   rows={4}
                   required
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="type">Course Type</Label>
+                <Label htmlFor="type">Tipo de Curso</Label>
                 <Select required>
                   <SelectTrigger id="type">
-                    <SelectValue placeholder="Select course type" />
+                    <SelectValue placeholder="Selecciona el tipo de curso" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="short">Short Course</SelectItem>
-                    <SelectItem value="full">Full Bootcamp</SelectItem>
-                    <SelectItem value="workshop">Workshop</SelectItem>
+                    <SelectItem value="short">Curso Corto</SelectItem>
+                    <SelectItem value="full">Bootcamp Completo</SelectItem>
+                    <SelectItem value="workshop">Taller</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div className="space-y-2">
-                <Label>File Upload</Label>
+                <Label>Subida de Archivos</Label>
                 <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary transition-colors cursor-pointer">
                   <Upload className="w-12 h-12 mx-auto mb-4 text-muted-foreground" />
                   <p className="text-sm text-muted-foreground mb-2">
-                    Drag and drop your files here, or click to browse
+                    Arrastra y suelta tus archivos aquí, o haz clic para explorar
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    Supports: PDF, ZIP, MP4 (Max 500MB)
+                    Formatos compatibles: PDF, ZIP, MP4 (Máx. 500MB)
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const CreateModule = () => {
               <div className="flex items-center space-x-2">
                 <Checkbox id="commission" required />
                 <Label htmlFor="commission" className="text-sm font-normal cursor-pointer">
-                  I agree to the commission agreement and terms of service
+                  Acepto el acuerdo de comisión y los términos de servicio
                 </Label>
               </div>
 
@@ -109,14 +109,14 @@ const CreateModule = () => {
                 className="w-full"
                 disabled={isProcessing || isCompleted}
               >
-                {isProcessing && "Processing..."}
+                {isProcessing && "Procesando..."}
                 {isCompleted && (
                   <>
                     <CheckCircle className="w-4 h-4 mr-2" />
-                    Ready for Review!
+                    ¡Listo para Revisión!
                   </>
                 )}
-                {!isProcessing && !isCompleted && "Submit Module"}
+                {!isProcessing && !isCompleted && "Enviar Módulo"}
               </Button>
             </form>
           </CardContent>

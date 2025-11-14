@@ -9,15 +9,15 @@ import WorkshopsSettings from "./WorkshopsSettings";
 
 const WorkshopsDashboard = () => {
   const sidebarItems = [
-    { label: "Overview", path: "/portal/workshops/overview", icon: <LayoutDashboard className="w-5 h-5" /> },
-    { label: "My Workshops", path: "/portal/workshops/my-workshops", icon: <Wrench className="w-5 h-5" /> },
-    { label: "Register New", path: "/portal/workshops/register", icon: <Plus className="w-5 h-5" /> },
-    { label: "Requests", path: "/portal/workshops/requests", icon: <Inbox className="w-5 h-5" /> },
-    { label: "Settings", path: "/portal/workshops/settings", icon: <Settings className="w-5 h-5" /> },
+    { label: "Resumen", path: "/portal/workshops/overview", icon: <LayoutDashboard className="w-5 h-5" /> },
+    { label: "Mis Talleres", path: "/portal/workshops/my-workshops", icon: <Wrench className="w-5 h-5" /> },
+    { label: "Registrar Nuevo", path: "/portal/workshops/register", icon: <Plus className="w-5 h-5" /> },
+    { label: "Solicitudes", path: "/portal/workshops/requests", icon: <Inbox className="w-5 h-5" /> },
+    { label: "Configuración", path: "/portal/workshops/settings", icon: <Settings className="w-5 h-5" /> },
   ];
 
   return (
-    <DashboardLayout sidebarItems={sidebarItems} title="Workshops Portal">
+    <DashboardLayout sidebarItems={sidebarItems} title="Portal de Talleres">
       <Routes>
         <Route index element={<Navigate to="overview" replace />} />
         <Route path="overview" element={<WorkshopsOverview />} />

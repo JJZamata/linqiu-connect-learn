@@ -8,44 +8,44 @@ const MyWorkshops = () => {
   const workshops = [
     {
       id: 1,
-      name: "Electronics Lab A",
-      category: "Electronics",
-      location: "Building 3, Floor 2",
-      status: "Active",
+      name: "Laboratorio de Electrónica A",
+      category: "Electrónica",
+      location: "Edificio 3, Piso 2",
+      status: "Activo",
       capacity: 20,
       bookings: 12,
     },
     {
       id: 2,
-      name: "Robotics Workshop",
-      category: "Robotics",
-      location: "Innovation Center",
-      status: "Active",
+      name: "Taller de Robótica",
+      category: "Robótica",
+      location: "Centro de Innovación",
+      status: "Activo",
       capacity: 15,
       bookings: 8,
     },
     {
       id: 3,
-      name: "3D Printing Lab",
-      category: "Manufacturing",
-      location: "Maker Space",
-      status: "Inactive",
+      name: "Laboratorio de Impresión 3D",
+      category: "Manufactura",
+      location: "Espacio Maker",
+      status: "Inactivo",
       capacity: 10,
       bookings: 0,
     },
     {
       id: 4,
-      name: "Computer Lab",
-      category: "Programming",
-      location: "Building 1, Floor 3",
-      status: "Active",
+      name: "Laboratorio de Computación",
+      category: "Programación",
+      location: "Edificio 1, Piso 3",
+      status: "Activo",
       capacity: 30,
       bookings: 25,
     },
   ];
 
   const getStatusColor = (status: string) => {
-    return status === "Active" ? "bg-green-500" : "bg-gray-500";
+    return status === "Activo" ? "bg-green-500" : "bg-gray-500";
   };
 
   return (
@@ -55,8 +55,8 @@ const MyWorkshops = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">My Workshops</h1>
-        <p className="text-muted-foreground">Manage your registered workshop spaces.</p>
+        <h1 className="text-3xl font-bold mb-2">Mis Talleres</h1>
+        <p className="text-muted-foreground">Gestiona tus espacios de taller registrados.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -87,7 +87,7 @@ const MyWorkshops = () => {
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Users className="w-4 h-4" />
                   <span>
-                    {workshop.bookings} / {workshop.capacity} capacity
+                    {workshop.bookings} / {workshop.capacity} capacidad
                   </span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
@@ -100,11 +100,11 @@ const MyWorkshops = () => {
               <CardFooter className="flex gap-2">
                 <Button variant="outline" size="sm" className="flex-1">
                   <Eye className="w-4 h-4 mr-2" />
-                  View
+                  Ver
                 </Button>
                 <Button variant="outline" size="sm" className="flex-1">
                   <Edit className="w-4 h-4 mr-2" />
-                  Edit
+                  Editar
                 </Button>
                 <Button variant="outline" size="sm">
                   <Power className="w-4 h-4" />

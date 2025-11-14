@@ -16,28 +16,28 @@ const RegisterWorkshop = () => {
   const { toast } = useToast();
 
   const services = [
-    "Digital Oscilloscopes",
-    "High-Speed Wi-Fi",
-    "3D Printers",
-    "Soldering Stations",
-    "Coffee & Refreshments",
-    "Whiteboards",
-    "Projector & Screen",
-    "Air Conditioning",
+    "Osciloscopios Digitales",
+    "Wi-Fi de Alta Velocidad",
+    "Impresoras 3D",
+    "Estaciones de Soldadura",
+    "Café y Refrigerios",
+    "Pizarras Blancas",
+    "Proyector y Pantalla",
+    "Aire Acondicionado",
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsProcessing(true);
-    
+
     setTimeout(() => {
       setIsProcessing(false);
       setIsCompleted(true);
       toast({
-        title: "Workshop Published!",
-        description: "Your workshop is now available for booking.",
+        title: "¡Taller Publicado!",
+        description: "Tu taller ahora está disponible para reservas.",
       });
-      
+
       setTimeout(() => {
         setIsCompleted(false);
       }, 3000);
@@ -51,8 +51,8 @@ const RegisterWorkshop = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-bold mb-2">Register New Workshop</h1>
-        <p className="text-muted-foreground">Add your workshop space to LinQiu's network.</p>
+        <h1 className="text-3xl font-bold mb-2">Registrar Nuevo Taller</h1>
+        <p className="text-muted-foreground">Agrega tu espacio de taller a la red de LinQiu.</p>
       </motion.div>
 
       <motion.div
@@ -63,35 +63,35 @@ const RegisterWorkshop = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Basic Information</CardTitle>
+              <CardTitle>Información Básica</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="workshop-name">Workshop Name</Label>
-                <Input id="workshop-name" placeholder="e.g., Electronics Lab A" required />
+                <Label htmlFor="workshop-name">Nombre del Taller</Label>
+                <Input id="workshop-name" placeholder="ej., Laboratorio de Electrónica A" required />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="category">Category</Label>
+                <Label htmlFor="category">Categoría</Label>
                 <Select required>
                   <SelectTrigger id="category">
-                    <SelectValue placeholder="Select category" />
+                    <SelectValue placeholder="Selecciona la categoría" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="electronics">Electronics</SelectItem>
-                    <SelectItem value="robotics">Robotics</SelectItem>
-                    <SelectItem value="mechanical">Mechanical</SelectItem>
-                    <SelectItem value="programming">Programming</SelectItem>
-                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="electronics">Electrónica</SelectItem>
+                    <SelectItem value="robotics">Robótica</SelectItem>
+                    <SelectItem value="mechanical">Mecánica</SelectItem>
+                    <SelectItem value="programming">Programación</SelectItem>
+                    <SelectItem value="manufacturing">Manufactura</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="description">Description</Label>
+                <Label htmlFor="description">Descripción</Label>
                 <Textarea
                   id="description"
-                  placeholder="Describe your workshop space and equipment..."
+                  placeholder="Describe tu espacio de taller y equipo..."
                   rows={4}
                   required
                 />
@@ -99,13 +99,13 @@ const RegisterWorkshop = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="capacity">Capacity</Label>
+                  <Label htmlFor="capacity">Capacidad</Label>
                   <Input id="capacity" type="number" placeholder="20" required />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="location">Location</Label>
-                  <Input id="location" placeholder="Building, Floor, Room" required />
+                  <Label htmlFor="location">Ubicación</Label>
+                  <Input id="location" placeholder="Edificio, Piso, Sala" required />
                 </div>
               </div>
             </CardContent>
@@ -113,35 +113,35 @@ const RegisterWorkshop = () => {
 
           <Card>
             <CardHeader>
-              <CardTitle>Availability</CardTitle>
+              <CardTitle>Disponibilidad</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="start-time">Operating Hours (Start)</Label>
+                  <Label htmlFor="start-time">Horario de Operación (Inicio)</Label>
                   <Input id="start-time" type="time" required />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="end-time">Operating Hours (End)</Label>
+                  <Label htmlFor="end-time">Horario de Operación (Fin)</Label>
                   <Input id="end-time" type="time" required />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="available-days">Available Days</Label>
-                <Input id="available-days" placeholder="Monday - Friday" required />
+                <Label htmlFor="available-days">Días Disponibles</Label>
+                <Input id="available-days" placeholder="Lunes - Viernes" required />
               </div>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Services & Equipment</CardTitle>
+              <CardTitle>Servicios y Equipamiento</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
-                <Label>Services Included</Label>
+                <Label>Servicios Incluidos</Label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {services.map((service) => (
                     <div key={service} className="flex items-center space-x-2">
@@ -155,10 +155,10 @@ const RegisterWorkshop = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="equipment">Additional Equipment</Label>
+                <Label htmlFor="equipment">Equipamiento Adicional</Label>
                 <Textarea
                   id="equipment"
-                  placeholder="List any specialized equipment available..."
+                  placeholder="Lista cualquier equipo especializado disponible..."
                   rows={3}
                 />
               </div>
@@ -167,19 +167,19 @@ const RegisterWorkshop = () => {
 
           <Card>
             <CardHeader>
-              <CardTitle>Contact & Policies</CardTitle>
+              <CardTitle>Contacto y Políticas</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="instructor">Instructor / Contact Person</Label>
-                <Input id="instructor" placeholder="Name and contact" required />
+                <Label htmlFor="instructor">Instructor / Persona de Contacto</Label>
+                <Input id="instructor" placeholder="Nombre y contacto" required />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="policies">Policies & Rules</Label>
+                <Label htmlFor="policies">Políticas y Reglas</Label>
                 <Textarea
                   id="policies"
-                  placeholder="Safety rules, cancellation policy, etc..."
+                  placeholder="Reglas de seguridad, política de cancelación, etc..."
                   rows={4}
                   required
                 />
@@ -189,35 +189,35 @@ const RegisterWorkshop = () => {
 
           <Card>
             <CardHeader>
-              <CardTitle>Images</CardTitle>
+              <CardTitle>Imágenes</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary transition-colors cursor-pointer">
                 <Upload className="w-12 h-12 mx-auto mb-4 text-muted-foreground" />
                 <p className="text-sm text-muted-foreground mb-2">
-                  Upload workshop images (multiple files accepted)
+                  Sube imágenes del taller (se aceptan múltiples archivos)
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  JPG, PNG (Max 5MB each, up to 10 images)
+                  JPG, PNG (Máx. 5MB cada una, hasta 10 imágenes)
                 </p>
               </div>
             </CardContent>
           </Card>
 
           <div className="flex justify-end gap-4">
-            <Button type="button" variant="outline">Save as Draft</Button>
+            <Button type="button" variant="outline">Guardar como Borrador</Button>
             <Button
               type="submit"
               disabled={isProcessing || isCompleted}
             >
-              {isProcessing && "Publishing..."}
+              {isProcessing && "Publicando..."}
               {isCompleted && (
                 <>
                   <CheckCircle className="w-4 h-4 mr-2" />
-                  Published!
+                  ¡Publicado!
                 </>
               )}
-              {!isProcessing && !isCompleted && "Preview & Submit"}
+              {!isProcessing && !isCompleted && "Vista Previa y Enviar"}
             </Button>
           </div>
         </form>
