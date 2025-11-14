@@ -1,0 +1,112 @@
+{
+  "routeId": "ia-applied-leadership",
+  "title": "IA Aplicada para Liderazgo",
+  "subtitle": "Guía paso a paso para convertirte en un líder estratégico en Inteligencia Artificial",
+  "summary": "Conviértete en un líder estratégico en IA + negocio, capaz de diseñar, implementar y escalar iniciativas de IA en tu organización.",
+  "targetAudience": "Profesional de TI, negocio o gestión que desea liderar proyectos de IA",
+  "outcomes": [
+    "Evaluar oportunidades de IA alineadas al negocio",
+    "Diseñar un roadmap de IA para su empresa",
+    "Liderar equipos multidisciplinarios en iniciativas de IA",
+    "Gobernar la adopción de IA de forma ética, escalable y con foco en resultados"
+  ],
+  "totalDurationMonths": 8,
+  "modality": "Virtual (Part-time recomendado, 10-15 horas semanales)",
+  "investment": "S/ 5,200 aprox.",
+  "certification": {
+    "award": "Diploma Especializado en Inteligencia Artificial para Líderes – Universidad de Lima"
+  },
+  "levels": [
+    {
+      "id": "level-1",
+      "stage": "Fundamentos de IA y Negocio",
+      "durationWeeks": 8,
+      "topics": [
+        "Introducción a IA",
+        "Machine Learning básico",
+        "Fundamentos de datos",
+        "Impacto de IA en el negocio"
+      ],
+      "learningOutcome": "Comprender qué es IA, cómo funciona y cómo puede impactar el negocio",
+      "prerequisite": "Conocimientos básicos de TI o negocio",
+      "complementary": {
+        "title": "Habilidades de Negocio y Liderazgo Inicial",
+        "durationWeeks": 4,
+        "topics": [
+          "Comunicación técnica al negocio",
+          "Curiosidad digital y aprendizaje continuo",
+          "Ética básica de IA"
+        ],
+        "outcome": "Desarrollar la base de habilidades humanas y de negocio para aplicar IA con visión integral"
+      }
+    },
+    {
+      "id": "level-2",
+      "stage": "Herramientas y Tecnologías de IA",
+      "durationWeeks": 12,
+      "topics": [
+        "Algoritmos de ML",
+        "Modelos generativos",
+        "Infraestructura de datos y cloud",
+        "Ética de IA avanzada"
+      ],
+      "learningOutcome": "Manejar herramientas de IA, evaluar tecnologías y comprender implicaciones éticas",
+      "prerequisite": "Nivel 1 completado",
+      "complementary": {
+        "title": "Cultura de IA y Colaboración Técnico-Negocio",
+        "durationWeeks": 6,
+        "topics": [
+          "Trabajo con equipos cross-funcionales",
+          "Cultura de IA en la empresa",
+          "Negociación técnico-negocio"
+        ],
+        "outcome": "Facilitar la integración de tecnología de IA con equipos de negocio y cultura organizacional"
+      }
+    },
+    {
+      "id": "level-3",
+      "stage": "Estrategia, Liderazgo y Gobernanza de IA",
+      "durationWeeks": 10,
+      "topics": [
+        "Diseño de estrategia de IA",
+        "Roadmap organizacional de IA",
+        "Gobernanza y gestión del cambio",
+        "Métricas, ROI y comunicación ejecutiva"
+      ],
+      "learningOutcome": "Ser capaz de diseñar un roadmap de IA para empresa, liderar equipos y comunicar impacto",
+      "prerequisite": "Nivel 2 completado",
+      "complementary": {
+        "title": "Liderazgo Avanzado y Gobernanza de IA",
+        "durationWeeks": 5,
+        "topics": [
+          "Toma de decisiones con IA",
+          "Visión estratégica y modelo de negocio",
+          "Ética avanzada de IA"
+        ],
+        "outcome": "Liderar iniciativas de IA con visión ejecutiva, comunicar valor y gobernar riesgos"
+      }
+    },
+    {
+      "id": "level-4",
+      "stage": "Proyecto Final de Liderazgo en IA",
+      "durationWeeks": 6,
+      "topics": [
+        "Proyecto aplicado: piloto de IA en empresa/Simulación",
+        "Presentación ejecutiva",
+        "Plan de escalado de IA"
+      ],
+      "learningOutcome": "Entregar un proyecto real de IA con plan de escalado y presentación ante stakeholders",
+      "prerequisite": "Nivel 3 completado",
+      "complementary": {
+        "title": "Portafolio, Networking y Marca Profesional en IA",
+        "durationWeeks": 4,
+        "topics": [
+          "Construcción de portafolio de proyectos IA",
+          "Storytelling de resultados IA",
+          "Red profesional en IA"
+        ],
+        "outcome": "Prepararse para el mercado profesional, mostrar logros y conectar con oportunidades"
+      }
+    }
+  ]
+}

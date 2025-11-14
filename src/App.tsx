@@ -8,6 +8,9 @@ import NotFound from "./pages/NotFound";
 import PortalSelection from "./pages/PortalSelection";
 import BootcampsDashboard from "./pages/bootcamps/BootcampsDashboard";
 import WorkshopsDashboard from "./pages/workshops/WorkshopsDashboard";
+import RoadmapsPage from "./pages/RoadmapsPage";
+import RoadmapPage from "./pages/RoadmapPage";
+import RoadmapIoTPage from "./pages/RoadmapIoTPage";
 import ChatBot from "./components/ChatBot";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/roadmaps" element={<RoadmapsPage />} />
+          <Route path="/roadmap" element={<RoadmapPage />} />
+          <Route path="/roadmap-ia-leadership" element={<RoadmapPage />} />
+          <Route path="/roadmap-iot" element={<RoadmapIoTPage />} />
+          <Route path="/roadmap-iot-transformation" element={<RoadmapIoTPage />} />
           <Route path="/portal" element={<PortalSelection />} />
           <Route path="/portal/bootcamps/*" element={<BootcampsDashboard />} />
           <Route path="/portal/workshops/*" element={<WorkshopsDashboard />} />

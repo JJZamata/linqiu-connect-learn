@@ -1,0 +1,195 @@
+{
+  "level1": {
+    "levelInfo": {
+      "stage": "Fundamentos de IoT y Conectividad",
+      "topics": [
+        "Introducción a IoT y casos de uso",
+        "Programación básica para IoT (Python, C/C++)",
+        "Electrónica básica: sensores, actuadores, microcontroladores",
+        "Conectividad y protocolos: WiFi, Bluetooth, LoRa, MQTT"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "IoT Fundamentals & Hardware Basics",
+        "duration": "8 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 2,300",
+          "installments": "S/ 575/etapa"
+        },
+        "description": "Introducción completa al mundo IoT con enfoque práctico en hardware. Aprende a crear dispositivos conectados desde cero usando Arduino, Raspberry Pi y sensores."
+      },
+      {
+        "name": "Embedded Systems & Sensors Programming",
+        "duration": "10 semanas",
+        "modality": "Presencial",
+        "price": {
+          "original": "S/ 2,700",
+          "installments": "S/ 675/etapa"
+        },
+        "description": "Especialización en programación de sistemas embebidos y manejo de sensores. Ideal para entender la base electrónica de las soluciones IoT."
+      },
+      {
+        "name": "Connectivity & Protocols for IoT",
+        "duration": "6 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 1,700",
+          "installments": "S/ 425/etapa"
+        },
+        "description": "Curso intensivo sobre protocolos de comunicación IoT. Domina WiFi, Bluetooth, LoRa, MQTT y las bases de la conectividad en el ecosistema IoT."
+      }
+    ]
+  },
+  "level2": {
+    "levelInfo": {
+      "stage": "Arquitectura, Datos y Nube para IoT",
+      "topics": [
+        "Arquitectura IoT: dispositivo, red, nube, edge",
+        "Servicios IoT en la nube (Azure, AWS, Google)",
+        "Ingestión y procesamiento de datos",
+        "Edge computing para IoT"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "Cloud IoT Architecture Master",
+        "duration": "12 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 3,500",
+          "installments": "S/ 875/etapa"
+        },
+        "description": "Domina las arquitecturas cloud para IoT. Aprende Azure IoT Hub, AWS IoT Core y Google Cloud IoT con proyectos reales de ingestión de datos."
+      },
+      {
+        "name": "Edge Computing & Data Processing",
+        "duration": "10 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 3,200",
+          "installments": "S/ 800/etapa"
+        },
+        "description": "Especialización en computación edge para IoT. Implementa soluciones de procesamiento local para reducir latencia y mejorar el rendimiento."
+      }
+    ]
+  },
+  "level3": {
+    "levelInfo": {
+      "stage": "Seguridad, Escalabilidad e Integración",
+      "topics": [
+        "Seguridad en dispositivos, red y nube IoT",
+        "Escalabilidad, despliegue masivo, mantenimiento",
+        "Integración con sistemas empresariales (API, SCADA)",
+        "Monitoreo, dashboards y operación de soluciones IoT"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "IoT Security & Scalability",
+        "duration": "10 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 3,000",
+          "installments": "S/ 750/etapa"
+        },
+        "description": "Protege y escala tus soluciones IoT. Aprende seguridad en dispositivos, redes y cloud, además de técnicas de despliegue masivo y mantenimiento."
+      },
+      {
+        "name": "Enterprise IoT Integration",
+        "duration": "8 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 2,400",
+          "installments": "S/ 600/etapa"
+        },
+        "description": "Integra IoT con sistemas empresariales existentes. Domina APIs, SCADA y la conexión con ERPs para soluciones empresariales completas."
+      },
+      {
+        "name": "IoT Operations & Monitoring",
+        "duration": "6 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 1,600",
+          "installments": "S/ 400/etapa"
+        },
+        "description": "Gestiona y monitorea infraestructura IoT. Aprende a crear dashboards, alertas y sistemas de monitoreo para operaciones eficientes."
+      }
+    ]
+  },
+  "level4": {
+    "levelInfo": {
+      "stage": "Transformación Digital & Especialización IoT",
+      "topics": [
+        "IoT en industria 4.0, ciudades inteligentes, servicios",
+        "Análisis avanzado e IA aplicada a IoT",
+        "Modelo de negocio, ROI de IoT, innovación organizacional"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "Digital Transformation with IoT",
+        "duration": "9 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 3,200",
+          "installments": "S/ 800/etapa"
+        },
+        "description": "Lidera iniciativas de transformación digital con IoT. Aprende a aplicar IoT en industria 4.0, smart cities y servicios urbanos."
+      },
+      {
+        "name": "AI & Machine Learning for IoT",
+        "duration": "10 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 3,600",
+          "installments": "S/ 900/etapa"
+        },
+        "description": "Aplica IA y Machine Learning a datos IoT. Domina computer vision, análisis predictivo y aprendizaje automático para dispositivos conectados."
+      },
+      {
+        "name": "IoT Business Strategy & Innovation",
+        "duration": "6 semanas",
+        "modality": "Presencial",
+        "price": {
+          "original": "S/ 2,000",
+          "installments": "S/ 500/etapa"
+        },
+        "description": "Desarrolla estrategias de negocio basadas en IoT. Aprende a calcular ROI, crear modelos de negocio e innovar con tecnología IoT."
+      }
+    ]
+  },
+  "level5": {
+    "levelInfo": {
+      "stage": "Proyecto Final IoT e Implementación Real",
+      "topics": [
+        "Proyecto end-to-end de IoT (hardware, red, nube, servicio)",
+        "Despliegue real o piloto, documentación técnica",
+        "Portafolio profesional y presentación ejecutiva"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "IoT Capstone Project",
+        "duration": "6 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 2,100",
+          "installments": "S/ 525/etapa"
+        },
+        "description": "Proyecto final integrando todos los conocimientos. Desarrolla una solución IoT completa desde el hardware hasta la aplicación web."
+      },
+      {
+        "name": "IoT Entrepreneurship & Portfolio Building",
+        "duration": "8 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 2,400",
+          "installments": "S/ 600/etapa"
+        },
+        "description": "Prepárate para el mercado laboral o emprendimiento. Construye portafolio de proyectos IoT y aprende a presentar soluciones a clientes."
+      }
+    ]
+  }
+}

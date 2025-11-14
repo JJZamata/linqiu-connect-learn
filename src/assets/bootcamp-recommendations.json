@@ -1,0 +1,153 @@
+{
+  "level-1": {
+    "levelInfo": {
+      "stage": "Fundamentos de IA y Negocio",
+      "topics": [
+        "Introducción a IA",
+        "Machine Learning básico",
+        "Fundamentos de datos",
+        "Impacto de IA en el negocio"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "AI Foundations for Business Leaders",
+        "duration": "8 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 2,100",
+          "installments": "S/ 525/etapa"
+        },
+        "description": "Aprende los fundamentos de inteligencia artificial y su aplicación en el contexto empresarial. Ideal para profesionales que quieren entender cómo la IA puede transformar los negocios."
+      },
+      {
+        "name": "Machine Learning Essentials",
+        "duration": "10 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 2,500",
+          "installments": "S/ 625/etapa"
+        },
+        "description": "Introducción práctica al machine learning con enfoque en análisis de datos y toma de decisiones. Incluye proyectos básicos para comprender el impacto empresarial."
+      },
+      {
+        "name": "Data Analytics & AI Introduction",
+        "duration": "6 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 1,800",
+          "installments": "S/ 450/etapa"
+        },
+        "description": "Curso intensivo sobre análisis de datos e introducción a conceptos de IA para profesionales de negocios. Enfocado en interpretación y aplicación práctica."
+      }
+    ]
+  },
+  "level-2": {
+    "levelInfo": {
+      "stage": "Herramientas y Tecnologías de IA",
+      "topics": [
+        "Algoritmos de ML",
+        "Modelos generativos",
+        "Infraestructura de datos y cloud",
+        "Ética de IA avanzada"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "Advanced Machine Learning & AI Tools",
+        "duration": "12 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 3,800",
+          "installments": "S/ 950/etapa"
+        },
+        "description": "Dominio de algoritmos de ML avanzados, incluyendo deep learning y modelos generativos. Enfoque en implementación con herramientas industry-standard."
+      },
+      {
+        "name": "Generative AI & Cloud Infrastructure",
+        "duration": "14 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 4,200",
+          "installments": "S/ 1,050/etapa"
+        },
+        "description": "Especialización en modelos generativos GPT, DALL-E y despliegue en plataformas cloud. Incluye ética y gobernanza de IA avanzada."
+      }
+    ]
+  },
+  "level-3": {
+    "levelInfo": {
+      "stage": "Estrategia, Liderazgo y Gobernanza de IA",
+      "topics": [
+        "Diseño de estrategia de IA",
+        "Roadmap organizacional de IA",
+        "Gobernanza y gestión del cambio",
+        "Métricas, ROI y comunicación ejecutiva"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "AI Strategy & Leadership",
+        "duration": "10 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 3,200",
+          "installments": "S/ 800/etapa"
+        },
+        "description": "Programa ejecutivo para diseñar estrategias de IA, liderar equipos multidisciplinarios y comunicar el valor de las iniciativas de IA a stakeholders."
+      },
+      {
+        "name": "AI Governance & Change Management",
+        "duration": "8 semanas",
+        "modality": "Presencial",
+        "price": {
+          "original": "S/ 2,800",
+          "installments": "S/ 700/etapa"
+        },
+        "description": "Especialización en gobernanza de IA, gestión del cambio organizacional y medición de ROI en proyectos de transformación digital."
+      },
+      {
+        "name": "Executive AI Leadership Program",
+        "duration": "6 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 3,500",
+          "installments": "S/ 875/etapa"
+        },
+        "description": "Programa intensivo para C-level executives sobre estrategia de IA, toma de decisiones basada en datos y liderazgo en la era de la inteligencia artificial."
+      }
+    ]
+  },
+  "level-4": {
+    "levelInfo": {
+      "stage": "Proyecto Final de Liderazgo en IA",
+      "topics": [
+        "Proyecto aplicado: piloto de IA en empresa/Simulación",
+        "Presentación ejecutiva",
+        "Plan de escalado de IA"
+      ]
+    },
+    "bootcamps": [
+      {
+        "name": "AI Project Capstone",
+        "duration": "6 semanas",
+        "modality": "Virtual",
+        "price": {
+          "original": "S/ 2,200",
+          "installments": "S/ 550/etapa"
+        },
+        "description": "Proyecto final aplicando todos los conocimientos adquiridos. Desarrollo de un piloto de IA real con mentoría experta y presentación a inversionistas."
+      },
+      {
+        "name": "AI Startup & Venture Building",
+        "duration": "8 semanas",
+        "modality": "Híbrido",
+        "price": {
+          "original": "S/ 2,600",
+          "installments": "S/ 650/etapa"
+        },
+        "description": "Programa práctico para lanzar iniciativas de IA, construir portafolio profesional y desarrollar networking estratégico en el ecosistema de tecnología."
+      }
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "routeId": "iot_transformation",
+  "title": "Internet de las Cosas (IoT) / Transformación Digital",
+  "subtitle": "Guía paso a paso para convertirte en un experto en soluciones IoT y transformación digital",
+  "summary": "Desarrolla competencias para diseñar, implementar e integrar soluciones IoT que impulsen la transformación digital de empresas, servicios o industrias.",
+  "targetAudience": "Profesionales con conocimientos básicos en programación o electrónica que desean especializarse en IoT y transformación digital",
+  "outcomes": [
+    "Diseñar y desplegar dispositivos conectados y sistemas IoT completos",
+    "Construir arquitecturas IoT usando nube, edge y procesamiento de datos",
+    "Garantizar seguridad, escalabilidad e integración de soluciones IoT",
+    "Aplicar IoT para transformación digital, análisis de datos y negocio",
+    "Realizar un proyecto IoT real listo para producción con impacto medible"
+  ],
+  "totalDurationMonths": 11,
+  "modality": "Part-time recomendado (10-15 horas semanales), modalidad práctica con hardware y nube",
+  "investment": "S/ 4,800 aprox.",
+  "certification": {
+    "award": "Diploma Especializado en IoT y Transformación Digital – Universidad de Lima"
+  },
+  "levels": [
+    {
+      "id": "level1",
+      "stage": "Fundamentos de IoT y Conectividad",
+      "durationWeeks": 8,
+      "topics": [
+        "Introducción a IoT y casos de uso",
+        "Programación básica para IoT (Python, C/C++)",
+        "Electrónica básica: sensores, actuadores, microcontroladores",
+        "Conectividad y protocolos: WiFi, Bluetooth, LoRa, MQTT"
+      ],
+      "learningOutcome": "Comprender arquitectura de sistema IoT, crear un dispositivo conectado simple",
+      "prerequisite": "Programación básica y lógica de electrónica",
+      "complementary": {
+        "title": "Electrónica Práctica y Prototipado",
+        "durationWeeks": 4,
+        "topics": [
+          "Diseño de circuitos básicos",
+          "Arduino y Raspberry Pi fundamentals",
+          "Soldadura y ensamblaje de prototipos"
+        ],
+        "outcome": "Desarrollar habilidades prácticas en electrónica para prototipado rápido"
+      }
+    },
+    {
+      "id": "level2",
+      "stage": "Arquitectura, Datos y Nube para IoT",
+      "durationWeeks": 12,
+      "topics": [
+        "Arquitectura IoT: dispositivo, red, nube, edge",
+        "Servicios IoT en la nube (Azure, AWS, Google)",
+        "Ingestión y procesamiento de datos",
+        "Edge computing para IoT"
+      ],
+      "learningOutcome": "Diseñar arquitectura de solución IoT con nube/edge y análisis de datos",
+      "prerequisite": "Nivel 1 completado",
+      "complementary": {
+        "title": "Integración de Plataformas Cloud",
+        "durationWeeks": 6,
+        "topics": [
+          "Azure IoT Hub y Stream Analytics",
+          "AWS IoT Core y Greengrass",
+          "Google Cloud IoT y BigQuery"
+        ],
+        "outcome": "Dominar las plataformas cloud principales para despliegue de soluciones IoT"
+      }
+    },
+    {
+      "id": "level3",
+      "stage": "Seguridad, Escalabilidad e Integración",
+      "durationWeeks": 10,
+      "topics": [
+        "Seguridad en dispositivos, red y nube IoT",
+        "Escalabilidad, despliegue masivo, mantenimiento",
+        "Integración con sistemas empresariales (API, SCADA)",
+        "Monitoreo, dashboards y operación de soluciones IoT"
+      ],
+      "learningOutcome": "Gestionar seguridad, escalabilidad e integración de soluciones IoT empresariales",
+      "prerequisite": "Nivel 2 completado",
+      "complementary": {
+        "title": "DevOps y Automatización IoT",
+        "durationWeeks": 5,
+        "topics": [
+          "CI/CD para dispositivos IoT",
+          "Automatización de despliegue masivo",
+          "Infrastructure as Code para IoT"
+        ],
+        "outcome": "Implementar prácticas DevOps para gestionar infraestructura IoT a escala"
+      }
+    },
+    {
+      "id": "level4",
+      "stage": "Transformación Digital & Especialización IoT",
+      "durationWeeks": 9,
+      "topics": [
+        "IoT en industria 4.0, ciudades inteligentes, servicios",
+        "Análisis avanzado e IA aplicada a IoT",
+        "Modelo de negocio, ROI de IoT, innovación organizacional"
+      ],
+      "learningOutcome": "Aplicar IoT para transformación digital y liderar iniciativas de negocio basadas en IoT",
+      "prerequisite": "Nivel 3 completado",
+      "complementary": {
+        "title": "IA y Machine Learning para IoT",
+        "durationWeeks": 6,
+        "topics": [
+          "Machine Learning en dispositivos edge",
+          "Computer Vision para IoT",
+          "Análisis predictivo con datos IoT"
+        ],
+        "outcome": "Aplicar técnicas de IA y ML para extraer valor de los datos IoT"
+      }
+    },
+    {
+      "id": "level5",
+      "stage": "Proyecto Final IoT e Implementación Real",
+      "durationWeeks": 6,
+      "topics": [
+        "Proyecto end-to-end de IoT (hardware, red, nube, servicio)",
+        "Despliegue real o piloto, documentación técnica",
+        "Portafolio profesional y presentación ejecutiva"
+      ],
+      "learningOutcome": "Completar una solución IoT real lista para producción y estar preparado para el mercado",
+      "prerequisite": "Nivel 4 completado",
+      "complementary": {
+        "title": "Emprendimiento y Portafolio IoT",
+        "durationWeeks": 4,
+        "topics": [
+          "Modelos de negocio para soluciones IoT",
+          "Construcción de portafolio técnico",
+          "Pitch y presentación de proyectos IoT"
+        ],
+        "outcome": "Prepararse para el mercado laboral o emprendimiento con proyectos IoT concretos"
+      }
+    }
+  ],
+  "complementaryPaths": [
+    {
+      "title": "IoT Industrial & Automatización",
+      "durationWeeks": 6,
+      "topics": [
+        "PLCs, SCADA y sensores industriales",
+        "Líneas de producción conectadas",
+        "Mantenimiento predictivo en IoT industrial"
+      ],
+      "outcome": "Especializarse en IoT para automatización industrial y fabricación inteligente"
+    },
+    {
+      "title": "Smart Cities & Servicios IoT",
+      "durationWeeks": 6,
+      "topics": [
+        "Infraestructura urbana conectada",
+        "Sensores ambientales y movilidad inteligente",
+        "Servicios inteligentes basados en IoT"
+      ],
+      "outcome": "Aplicar IoT en ciudades inteligentes y servicios públicos"
+    },
+    {
+      "title": "Edge & IoT + IA en el Borde",
+      "durationWeeks": 6,
+      "topics": [
+        "Computación en el borde para IoT",
+        "Dispositivos autónomos inteligentes",
+        "IA ligera para IoT y procesamiento local"
+      ],
+      "outcome": "Combinar IoT con edge computing y IA para soluciones autónomas"
+    },
+    {
+      "title": "Seguridad y Ética en IoT",
+      "durationWeeks": 4,
+      "topics": [
+        "Pentesting de dispositivos IoT",
+        "Normativas, privacidad y estándares",
+        "Evaluación de riesgos en ecosistemas IoT"
+      ],
+      "outcome": "Comprender los retos de seguridad, privacidad y estándares en IoT"
+    }
+  ]
+}
